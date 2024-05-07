@@ -3,3 +3,4 @@
 
 - zadatke za vježbu možete pronaći u istoimenom direktoriju unutar ovog repozitorija odnosno na [ovoj](https://github.com/adobrini-algebra/radno_okruzenje/tree/master/zadaci_za_vjezbu) poveznici
 - ovo je test za fejkanje kolege iz tima
+- dodao liniju za konflikt
