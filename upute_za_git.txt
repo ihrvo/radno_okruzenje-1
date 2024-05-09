@@ -8,7 +8,9 @@ git init
 git add .
 git commit -m "Poruka"
 git branch -M main
-git remote add origin https://github.com/DOBRINIC/radno_okruzenje.git
+git remote add origin https://github.com/VAŠ_USERNAME/radno_okruzenje.git
 git push -u origin main
+
+kreitati GitHub token
 
 git config --global credential.helper store
