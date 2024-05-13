@@ -57,7 +57,7 @@ sudo chown -R :www /opt/homebrew/var/www
 sudo chmod -R g+w /opt/homebrew/var/www
 
 Verify PHP:
-Create a PHP file in Apache's document root directory (usually /usr/local/var/www) with the following content:
+Create a PHP file in Apache's document root directory (usually /opt/homebrew/var/www) with the following content:
 <?php phpinfo(); ?>
 Save this file as info.php, then access it in your browser by navigating to http://localhost/info.php. You should see the PHP information page.
 
