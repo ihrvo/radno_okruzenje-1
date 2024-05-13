@@ -21,10 +21,6 @@ if ! systemctl is-active --quiet apache2; then
     sudo systemctl start apache2
 fi
 
-# Configure firewall for Apache
-sudo ufw allow in "Apache"
-sudo ufw enable
-
 # Check if MySQL server is installed
 if ! dpkg -l mysql-server &> /dev/null; then
     # If MySQL is not installed, install it
