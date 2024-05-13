@@ -15,9 +15,6 @@ if ! dpkg -l apache2 &> /dev/null; then
     sudo apt install -y apache2
 fi
 
-# Install Apache
-sudo apt install -y apache2
-
 # Check if Apache is running
 if ! systemctl is-active --quiet apache2; then
     # If Apache is not running, start it
@@ -122,7 +119,6 @@ sudo a2enmod rewrite
 sudo systemctl reload apache2
 
 # Install phpMyAdmin
-sudo apt update
 sudo apt install -y phpmyadmin
 sudo phpenmod -v ALL mbstring
 sudo systemctl restart apache2
