@@ -31,6 +31,20 @@ sudo nano /etc/apache2/sites-available/algebra_test.conf
     DocumentRoot /var/www/algebra_test
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+    <Directory /var/www/algebra_test>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+
+    # Add Alias for phpMyAdmin
+    Alias /phpmyadmin /usr/share/phpmyadmin
+    <Directory /usr/share/phpmyadmin>
+        Options FollowSymLinks
+        DirectoryIndex index.php
+        Require all granted
+    </Directory>
 </VirtualHost>
 
 sudo a2ensite algebra_test
