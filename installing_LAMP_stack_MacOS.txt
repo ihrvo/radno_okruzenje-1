@@ -42,9 +42,9 @@ brew install php
 /opt/homebrew/etc/httpd/extra/httpd-vhosts.conf ->
 	<VirtualHost *:80>
 	    ServerName my-project.test
-	    DocumentRoot /opt/homebrew/var/www
+	    DocumentRoot /opt/homebrew/var/www/algebra_test
 
-	    <Directory /opt/homebrew/var/www>
+	    <Directory /opt/homebrew/var/www/algebra_test>
 	        Require all granted
 	        AllowOverride All
 	    </Directory>
