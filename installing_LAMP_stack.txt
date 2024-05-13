@@ -87,4 +87,6 @@ RewriteRule ^([^/]+)/?$ $1.php [L]
 # Error handling
 ErrorDocument 404 /404.html
 
+sudo a2enmod rewrite
+
 sudo systemctl reload apache2
