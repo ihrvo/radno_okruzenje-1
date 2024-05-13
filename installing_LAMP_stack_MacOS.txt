@@ -41,12 +41,15 @@ brew install php
 
 /opt/homebrew/etc/httpd/extra/httpd-vhosts.conf ->
 	<VirtualHost *:80>
-	    ServerName my-project.test
+	    ServerAdmin algebra@localhost
 	    DocumentRoot /opt/homebrew/var/www/algebra_test
-
+	    ErrorLog ${APACHE_LOG_DIR}/error.log
+	    CustomLog ${APACHE_LOG_DIR}/access.log combined
+	
 	    <Directory /opt/homebrew/var/www/algebra_test>
-	        Require all granted
+	        Options Indexes FollowSymLinks
 	        AllowOverride All
+	        Require all granted
 	    </Directory>
 	</VirtualHost>
 
